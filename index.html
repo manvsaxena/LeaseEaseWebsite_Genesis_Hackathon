@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaseEase</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        html {
+            background-image: linear-gradient(#0b0541, #b0b0f4);
+            background-repeat: no-repeat;
+            height: 200%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            margin: 0;
+            animation: fadeIn 1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .logo {
+            color: white;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+
+        .logo h1 {
+            font-size: 15vh;
+        }
+
+        .logo ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo li {
+            margin: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .logo li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo li:hover {
+            color: #ffcc00;
+        }
+
+        .scroll-furniture {
+            height: 300px;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .scroll-furniture img {
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin: 0 20px;
+            transform: scale(0.8);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .scroll-furniture img:hover {
+            transform: scale(1.2); /* Adjust the scale factor for desired zoom level */
+        }
+
+        .about {
+            text-align: center;
+            color: white;
+            animation: fadeIn 1s ease-out;
+            margin-top: 20px;
+        }
+
+        .person-1 {
+            margin: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .person-1 h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .person-1 img {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .person-1 img:hover {
+            transform: scale(1.2); /* Adjust the scale factor for desired zoom level */
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: white;
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LeaseEase</h1>
+            <ul>
+                <li><a href="/Users/manvsaxena/Documents/players_web3/Rent.html">Rent</a></li>
+                <li><a href="/Users/manvsaxena/Documents/players_web3/Sell.html">Sell</a></li>
+                <li>About</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="scroll-furniture">
+        <img src="scroll_page_1.png" alt="Scroll Image 1">
+        <img src="scroll_page_6.png" alt="Scroll Image 2">
+        <img src="scroll_page_3.png" alt="Scroll Image 3">
+        <img src="scroll_page_4.png" alt="Scroll Image 4">
+        <img src="scroll_page_5.png" alt="Scroll Image 5">
+    </div>
+
+    <div class="about">
+        <h1>About</h1>
+        <div class="person-1">
+            <h2>1. Sanchari Bhunia</h2>
+            <img src="image_2.JPG" alt="Sanchari Bhunia">
+        </div>
+        <div class="person-1">
+            <h2>2. Barkha Panigrahy</h2>
+            <img src="image_3.JPG" alt="Barkha Panigrahy">
+        </div>
+        <div class="person-1">
+            <h2>3. Manav Saxena</h2>
+            <img src="image_4.JPG" alt="Manav Saxena">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LeaseEase</p>
+    </footer>
+</body>
+</html>
